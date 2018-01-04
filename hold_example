@@ -1,0 +1,32 @@
+require "sinatra"
+#enable sessions
+get '/' do
+    erb  :home
+end
+get '/about' do
+    erb :about
+end
+post '/sandwich_choice' do
+    sandwich = params[:sandwich]
+    redirect '/show_sandwich?sandwich=' + sandwich
+end
+get '/show_sandwich' do
+    erb :show_sandwich, :locals => {:sandwich => sandwich}
+end
+
+require "sinatra"
+
+#enable sessions
+
+get '/' do
+    erb :wood_pen
+end
+
+post '/pen_choice' do
+    pen = params[:pen]
+    redirect '/show_pen?pen=' + pen
+end
+get '/show_pen' do
+	 pen = params[:pen]
+    erb :show_pen, :locals => {:pen => pen}
+end

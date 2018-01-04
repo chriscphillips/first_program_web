@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Sandwich Shop</title>
+<link href="<%= url('/css/style.css') %>" rel="stylesheet" type="text/css" /> 
+<center>
+	<img src="/img/sandwich shop 4.jpg" alt="sandwich shop" width="299" height="168">
+<br>
+<h1 style= "color: black; font_size: 250%;"> <b> What sides would you like.</b>
+<h1 style= "color: red; font-size: 200%;"> <b><i> Welcome to our garden bar!</i></b> </h1>
+<h2 style= "color: brown; font-size: 150%;"> <b><i> Try our beer battered onion rings!</i></b> </h2>
+<form method="post" action="sides">
+    <input type="text"  name="sides">
+    <input type="hidden" name="sandwich" value=<%= sandwich %>
+    <br>
+    <br>
+    <input type="submit">
+    <br>
+    <br>
+ <ul style="list-style-type:none;">
+	<li>Fries</li>
+	<li>Beer Battered Onion Rings</li>
+	<li>Sx Salad</li>
+	<li>Lg Salad</li>
+</ul> 
+</form>
+</center>
+</head>
+</html>

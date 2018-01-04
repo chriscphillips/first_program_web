@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Sandwich Shop</title>
+<link href="<%= url('/css/style.css') %>" rel="stylesheet" type="text/css" /> 
+<center>
+	<img src="/img/sandwich shop 4.jpg" alt="sandwich shop" width="299" height="168">
+<br>
+<h1 style= "color: black; font-size: 250%;"> <b><i>What type of drink would you like?</i></b>
+<h1 style= "color: red; font-size: 200%;"><b><i>Welcome to our beverage bar!</i></b> </h1>
+<h2 style= "color: brown; font-size: 150%;"><b>Best Sweet tea in town!</b> </h2>
+<form method="post" action="drink">
+    <input type="text"  name="drink">
+    <input type="hidden" name="sandwich" value=<%= sandwich %>>
+    <input type="hidden" name="sides" value=<%= sides %>>
+    <br>
+    <br>
+    <input type="submit">
+    <br>
+    <br>
+<ul style="list-style-type:none;">
+	<li>Soft Drink</li>
+	<li>Iced Tea</li>
+	<li>2 Liter Soda</li>
+	<li>Coffee</li>
+	<li>Hot Tea</li>
+	<li>All Bottle Drinks</li>
+	<li>1 Gallon Tea</li>
+	<li>Bottle Water</li>
+	<li>Kids Drink</li>
+</ul>
+</form>
+</center>
+</head>
+</html>
+
+

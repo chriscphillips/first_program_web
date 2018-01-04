@@ -1,0 +1,16 @@
+<p> Would you like a side and drink with your meal? <%= sandwich %> sandwich
+</p>
+
+<form method= "post"  action= "fries_choice; small or large; drink_choice; small, med, lg">
+	<label for= "yes">Yes</lable>
+	<input type= "sides" name= "fries" id= "Yes" value= "yes"/>
+	<label for= "no">No</label>
+	<input type= "sides" name= "fries" id= "No" value= "no"/>
+	<lable for= "yes">yes</lable>
+	<input type= "beverage" name= "drink" id= "Yes" value= "yes"/>
+	<label for= "no">No</label>
+	<input type= "hidden" name= "sandwich" value= <%= sandwich %>>
+	<br>
+	<br>
+	<input type= "submit">
+</form>
